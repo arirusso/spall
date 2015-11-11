@@ -1,6 +1,6 @@
 #
 # Spall
-# Audio Sample Player
+# MIDI Controllable Audio Sample Player
 #
 # (c)2015 Ari Russo
 # Apache 2.0 License
