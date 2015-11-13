@@ -18,6 +18,25 @@ Once those libraries are installed, install the gem itself using
 Or if you're using Bundler, add this to your Gemfile
 
     gem "spall"
+    
+## Usage
+
+```ruby
+require "spall"
+
+@input = UniMIDI::Input.gets
+
+@player = Spall::SamplePlayer.new(@input) do
+
+  note("C1") { play("kick.wav") }
+  note("D1") { play("snare1.wav") }
+  note("E1") { play("snare2.wav") }
+  note("Bb1") { play("hihat.wav") }
+
+end
+
+@player.start
+```
 
 ## License
 
