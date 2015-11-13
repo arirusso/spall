@@ -11,7 +11,16 @@
 require "audio-playback"
 require "midi-eye"
 require "midi-message"
+require "timeout"
 require "unimidi"
+
+# modules
+require "spall/instructions"
+require "spall/midi"
+require "spall/thread"
+
+# classes
+require "spall/sample_player"
 
 module Spall
 
